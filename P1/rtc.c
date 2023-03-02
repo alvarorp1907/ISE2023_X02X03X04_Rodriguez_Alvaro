@@ -38,8 +38,8 @@ void init_RTC(void){
  
   /** Initialize RTC and set the Time and Date 
   */
-	uint8_t hora=0x10;
-	uint8_t minutos=0x20;
+	uint8_t hora=0x23;
+	uint8_t minutos=0x59;
 	uint8_t segundos=0x30;
 	uint8_t dia=RTC_WEEKDAY_WEDNESDAY;
 	uint8_t mes=RTC_MONTH_MARCH;
@@ -96,12 +96,19 @@ void set_alarm(void){
 	HAL_RTC_GetDate(&hrtc, &sDate, RTC_FORMAT_BIN);
 	
 	uint8_t mins_alarm=sTime.Minutes+1;
+	uint8_t horas_alarm=sTime.Hours;
 	
 	if(mins_alarm==60){
 		mins_alarm=0;
+		if(horas_alarm==23){
+			horas_alarm=0;
+		}else{
+			horas_alarm++;
+		}
 	}
 	
-	alarmRtc.AlarmTime.Hours = sTime.Hours;
+	
+	alarmRtc.AlarmTime.Hours = horas_alarm;
   alarmRtc.AlarmTime.Minutes = mins_alarm;
   alarmRtc.AlarmTime.Seconds = sTime.Seconds;
   alarmRtc.AlarmTime.SubSeconds = 0x0;
