@@ -6,8 +6,7 @@
 typedef struct {
 	char time[30];
 	char date[30];
-	
-  }fechayhora;
+ }fechayhora;
 
 //FUNCIONES
 	void init_RTC(void);

@@ -42,3 +42,5 @@
 .\debug\sntp.o: C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include\rl_net.h
 .\debug\sntp.o: C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include\rl_net_ds.h
 .\debug\sntp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\debug\sntp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\debug\sntp.o: rtc.h

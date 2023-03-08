@@ -75,7 +75,7 @@ void set_time_date(uint8_t hora, uint8_t minutos, uint8_t segundos, uint8_t dia,
   sTime.Seconds = segundos;
   sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
   sTime.StoreOperation = RTC_STOREOPERATION_RESET;
-  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
   {
     printf("error al establecer la hora del RTC\n\r");
 	}
@@ -85,7 +85,7 @@ void set_time_date(uint8_t hora, uint8_t minutos, uint8_t segundos, uint8_t dia,
   sDate.Date = diaSemana;//numero dia del mes
   sDate.Year = ano;
  
-  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
+  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
   {
    printf("error al establecer la fecha del RTC\n\r");
   }

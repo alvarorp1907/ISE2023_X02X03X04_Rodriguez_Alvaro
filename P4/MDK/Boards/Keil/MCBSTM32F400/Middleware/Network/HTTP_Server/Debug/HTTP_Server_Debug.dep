@@ -42,9 +42,9 @@ I (C:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include\cm
 I (configuracion.h)(0x63F79CD3)
 I (lcd.h)(0x619CDDA0)
 I (adc.h)(0x63F117EB)
-I (rtc.h)(0x63FF8DD5)
-I (sntp.h)(0x6407857A)
-F (.\HTTP_Server.c)(0x640788A5)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\http_server.o --depend .\debug\http_server.d)
+I (rtc.h)(0x64086009)
+I (sntp.h)(0x64086150)
+F (.\HTTP_Server.c)(0x64085FBF)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\http_server.o --depend .\debug\http_server.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E9122)
 I (main.h)(0x5D36EA88)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F6B26D6)
@@ -89,8 +89,8 @@ I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Inc
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E9122)
 I (lcd.h)(0x619CDDA0)
 I (adc.h)(0x63F117EB)
-I (rtc.h)(0x63FF8DD5)
-I (sntp.h)(0x6407857A)
+I (rtc.h)(0x64086009)
+I (sntp.h)(0x64086150)
 F (.\HTTP_Server_CGI.c)(0x640778DB)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\http_server_cgi.o --depend .\debug\http_server_cgi.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E9122)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E9122)
@@ -137,8 +137,8 @@ I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM3
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5F6B26D6)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F6B26D6)
 I (adc.h)(0x63F117EB)
-I (rtc.h)(0x63FF8DD5)
-F (Web\Web.c)(0x640852F9)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\web.o --depend .\debug\web.d)
+I (rtc.h)(0x64086009)
+F (Web\Web.c)(0x64086660)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\web.o --depend .\debug\web.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E9122)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
 F (.\configuracion.c)(0x63F79CD3)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\configuracion.o --depend .\debug\configuracion.d)
@@ -263,7 +263,7 @@ I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM3
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5F6B26D6)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F6B26D6)
 F (.\adc.h)(0x63F117EB)()
-F (.\rtc.c)(0x6404D77A)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\rtc.o --depend .\debug\rtc.d)
+F (.\rtc.c)(0x64086150)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\rtc.o --depend .\debug\rtc.d)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F6B26D6)
 I (.\RTE\Device\STM32F429ZITx\stm32f4xx_hal_conf.h)(0x5F6D8F2C)
 I (.\RTE\_Debug\RTE_Components.h)(0x64077E02)
@@ -302,10 +302,10 @@ I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM3
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F6B26D6)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E9122)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E9122)
-I (rtc.h)(0x63FF8DD5)
+I (rtc.h)(0x64086009)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x60D43D42)
-F (.\rtc.h)(0x63FF8DD5)()
-F (.\sntp.c)(0x64079289)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\sntp.o --depend .\debug\sntp.d)
+F (.\rtc.h)(0x64086009)()
+F (.\sntp.c)(0x64086660)(--c99 -c --cpu Cortex-M4 -D__RTX -D__MICROLIB -g -O1 --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\STM32F429ZITx-I.\RTE\Network-I.\RTE\_Debug-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Driver\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\RTX\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Board-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F429xx -D_RTE_ -DHSE_VALUE="8000000"-o .\debug\sntp.o --depend .\debug\sntp.d)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F6B26D6)
 I (.\RTE\Device\STM32F429ZITx\stm32f4xx_hal_conf.h)(0x5F6D8F2C)
 I (.\RTE\_Debug\RTE_Components.h)(0x64077E02)
@@ -345,11 +345,13 @@ I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM3
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E9122)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E9122)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x60D43D42)
-I (sntp.h)(0x6407857A)
+I (sntp.h)(0x64086150)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include\rl_net.h)(0x5E959FC0)
 I (C:\Users\arpcr\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.13.0\Network\Include\rl_net_ds.h)(0x60A558E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E9122)
-F (.\sntp.h)(0x6407857A)()
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x5E8E9122)
+I (rtc.h)(0x64086009)
+F (.\sntp.h)(0x64086150)()
 F (.\Web\index.htm)(0x6400F14F)()
 F (.\Web\pg_header.inc)(0x56617F7E)()
 F (.\Web\pg_footer.inc)(0x56617F7E)()
