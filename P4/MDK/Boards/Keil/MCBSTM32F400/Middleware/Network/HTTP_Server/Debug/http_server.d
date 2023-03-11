@@ -45,3 +45,5 @@
 .\debug\http_server.o: adc.h
 .\debug\http_server.o: rtc.h
 .\debug\http_server.o: sntp.h
+.\debug\http_server.o: ThLCD.h
+.\debug\http_server.o: ThAlarm.h

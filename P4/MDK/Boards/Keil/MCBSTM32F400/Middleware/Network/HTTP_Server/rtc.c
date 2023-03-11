@@ -2,14 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include "rtc.h"
+#include "sntp.h"
 #include "cmsis_os2.h"                          // CMSIS RTOS header file
 
   RTC_HandleTypeDef hrtc;
   RTC_TimeTypeDef sTime = {0};
 	RTC_DateTypeDef sDate = {0};
 	RTC_AlarmTypeDef alarmRtc;
-	
-	extern osThreadId_t tid_ThAlarm;
 	
 void init_RTC(void){
 	
@@ -95,10 +94,25 @@ void set_alarm(void){
   HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
 	HAL_RTC_GetDate(&hrtc, &sDate, RTC_FORMAT_BIN);
 	
-	uint8_t mins_alarm=sTime.Minutes+1;
+	uint8_t mins_alarm=sTime.Minutes+3;//se establece alarma para dentro de 3 minutos 
 	uint8_t horas_alarm=sTime.Hours;
 	
-	if(mins_alarm==60){
+	//CASOS LIMITE
+	if(mins_alarm==62){
+		mins_alarm=2;
+		if(horas_alarm==23){
+			horas_alarm=0;
+		}else{
+			horas_alarm++;
+		}
+	}else if(mins_alarm==61){
+		mins_alarm=1;
+		if(horas_alarm==23){
+			horas_alarm=0;
+		}else{
+			horas_alarm++;
+		}
+	}else if(mins_alarm==60){
 		mins_alarm=0;
 		if(horas_alarm==23){
 			horas_alarm=0;
@@ -106,7 +120,6 @@ void set_alarm(void){
 			horas_alarm++;
 		}
 	}
-	
 	
 	alarmRtc.AlarmTime.Hours = horas_alarm;
   alarmRtc.AlarmTime.Minutes = mins_alarm;
@@ -168,7 +181,8 @@ static uint32_t exec1;                          // argument for the timer call b
 // Periodic Timer Function
 static void Timer2_Callback (void const *arg) {
   // add user code here
-osTimerStop(tim_toggle);
+  //osTimerStop(tim_toggle);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
 }
  
 // Example: Create and Start timers
@@ -191,6 +205,5 @@ int Init_TimerTimeout (void) {
 
 void RTC_Alarm_IRQHandler(void) {
   HAL_RTC_AlarmIRQHandler(&hrtc);
-	//osThreadFlagsSet(tid_ThAlarm ,0x00000001U);
-	//set_alarm();//establecemos alarma dentro de un minuto
+  get_time();//resincronizamos la hora SNTP y volvemos a establecer alarma
 }

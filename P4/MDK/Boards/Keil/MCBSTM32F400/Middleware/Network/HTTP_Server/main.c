@@ -45,6 +45,7 @@
 #include "rtc.h"
 #include "sntp.h"
 
+
 #ifdef RTE_CMSIS_RTOS2_RTX5
 /**
   * Override default HAL_GetTick function
@@ -125,6 +126,8 @@ int main(void)
 	init_rgb();
 	//inicializacion RTC
 	init_RTC();
+	//inicializacion boton de usuario
+	init_user_botton();
 	
 	
 	

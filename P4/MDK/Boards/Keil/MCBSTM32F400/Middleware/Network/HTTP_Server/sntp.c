@@ -6,9 +6,12 @@
 #include "rl_net.h"
 #include <time.h>
 #include "rtc.h"
+#include "ThAlarm.h"
 
 const  NET_ADDR4 ntp_server = { NET_ADDR_IP4 , 0, 217, 79, 179, 106 };
 static void time_callback (uint32_t seconds, uint32_t seconds_fraction);
+
+extern osThreadId_t tid_ThAlarm;
  
 void get_time (void) {
   if (netSNTPc_GetTime (NULL, time_callback) == netOK) {
@@ -25,6 +28,7 @@ static void time_callback (uint32_t seconds, uint32_t seconds_fraction) {
   }
   else {
     printf ("%d seconds elapsed since 1.1.1970\n", seconds);
+		osThreadFlagsSet(tid_ThAlarm ,0x00000001U);
 		fecha_hora_ntp(seconds);
 		
   }
@@ -41,6 +45,7 @@ void fecha_hora_ntp(uint32_t seconds){
     printf("%s\n", buf);
 	  uint8_t ano= ts.tm_year-100;
 	  uint8_t mes= ts.tm_mon+1;
-	  set_time_date(ts.tm_hour, ts.tm_min, ts.tm_sec,ts.tm_wday,ts.tm_mday,mes, ano );
+	  set_time_date(ts.tm_hour, ts.tm_min, ts.tm_sec,ts.tm_wday,ts.tm_mday,mes, ano );//SET RTC 
+	  set_alarm();//SET RTC ALARM
 }
 

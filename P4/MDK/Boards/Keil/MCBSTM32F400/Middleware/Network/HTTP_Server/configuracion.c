@@ -51,3 +51,17 @@ void init_rgb(void){
 	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);
 }
+
+void init_user_botton(){
+	
+	HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+	
+	__HAL_RCC_GPIOC_CLK_ENABLE();
+	
+	static GPIO_InitTypeDef GPIO_InitStruct;
+	GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	GPIO_InitStruct.Pin = GPIO_PIN_13;
+	HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	
+}

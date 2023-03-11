@@ -23,6 +23,8 @@
 #include "adc.h"
 #include "rtc.h"
 #include "sntp.h"
+#include "ThLCD.h"
+#include "ThAlarm.h"
 
 // Main stack size must be multiple of 8 Bytes
 #define APP_MAIN_STK_SZ (1024U)
@@ -172,21 +174,17 @@ static __NO_RETURN void BlinkLed (void *arg) {
  *---------------------------------------------------------------------------*/
 __NO_RETURN void app_main (void *arg) {
   (void)arg;
-
-	//LED_Initialize();
-  //Buttons_Initialize();
-  //ADC_Initialize();
-
+	
+	//INICIO RED
   netInitialize ();
-	
-	
-	osDelay(7000);
+	//OBTENCION HORA Y PUESTA EN HORA DEL RTC Y ALARMA
+	osDelay(5000);
 	get_time();
-	
-	
-
-  //TID_Led     = osThreadNew (BlinkLed, NULL, NULL);
+	//ARRANQUE THREADS
+	int status;
   TID_Display = osThreadNew (Display,  NULL, NULL);
+	status=Init_ThLCD();
+	status=Init_ThAlarm();
 
   osThreadExit();
 }

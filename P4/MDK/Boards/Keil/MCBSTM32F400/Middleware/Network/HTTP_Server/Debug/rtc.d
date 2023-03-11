@@ -39,3 +39,4 @@
 .\debug\rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\debug\rtc.o: rtc.h
 .\debug\rtc.o: C:\Users\arpcr\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\debug\rtc.o: sntp.h

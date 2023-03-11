@@ -458,6 +458,31 @@
               <FileType>5</FileType>
               <FilePath>.\sntp.h</FilePath>
             </File>
+            <File>
+              <FileName>ThLCD.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ThLCD.c</FilePath>
+            </File>
+            <File>
+              <FileName>ThLCD.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ThLCD.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>ThAlarm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ThAlarm.c</FilePath>
+            </File>
+            <File>
+              <FileName>ThAlarm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ThAlarm.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1051,6 +1076,31 @@
               <FileName>sntp.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\sntp.h</FilePath>
+            </File>
+            <File>
+              <FileName>ThLCD.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ThLCD.c</FilePath>
+            </File>
+            <File>
+              <FileName>ThLCD.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ThLCD.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>ThAlarm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ThAlarm.c</FilePath>
+            </File>
+            <File>
+              <FileName>ThAlarm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ThAlarm.h</FilePath>
             </File>
           </Files>
         </Group>

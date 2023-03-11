@@ -44,3 +44,4 @@
 .\debug\sntp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\debug\sntp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
 .\debug\sntp.o: rtc.h
+.\debug\sntp.o: ThAlarm.h
